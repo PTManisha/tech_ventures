@@ -1,0 +1,112 @@
+/* Chat.css */
+
+/* Container holding the chat box */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, #f3f2f4, #f3f2f4);
+  }
+  
+  /* Increased the size of the chat box with fixed pixel addition */
+  .chat-box {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 600px;
+    width: 1100px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .chat-header {
+    background-color: #d9d9d9;
+    padding: 16px;
+    color: black;
+    font-size: 1.25rem;  /* Slightly larger font for the header */
+    font-weight: 600;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .messages-display {
+    flex-grow: 1;
+    padding: 16px;
+    overflow-y: auto;
+    background-color: #f7fafc;
+    border-radius: 8px;
+  }
+  
+  .message-container {
+    display: flex;
+    margin-bottom: 12px;
+  }
+  
+  .message-container.sent {
+    justify-content: flex-end;
+  }
+  
+  .message-container.received {
+    justify-content: flex-start;
+  }
+  
+  .message-box {
+    padding: 12px;
+    max-width: 70%;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+  }
+  
+  .message-box.sent {
+    background-color: #f3f2f4;
+  }
+  
+  .message-box.received {
+    background-color: #f3f2f4;
+  }
+  
+  .timestamp {
+    font-size: 0.65rem;
+    color: #e5e7eb;
+    text-align: right;
+    margin-top: 4px;
+  }
+  
+  .input-box {
+    padding: 16px;
+    border-top: 1px solid #e5e7eb;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+  }
+  
+  .input-container {
+    display: flex;
+    
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px 0 0 8px;
+    outline: none;
+  }
+  
+  .send-button {
+    padding: 12px;
+    background-color: #f3f2f4;
+    color: white;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+  }
+  
+  .send-button:hover {
+    background-color: #f3f2f4;
+  }
+  

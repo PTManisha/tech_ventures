@@ -1,0 +1,171 @@
+/* Reset all default margins */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Full-page centered form with no top gap */
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures full height without gaps */
+    background: #f4f4f4;
+    padding: 0; /* Removes any extra padding */
+  }
+  
+  /* Form card with no gap at the top */
+  .form-card {
+    background: #fff;
+    padding: 25px;
+    width: 100%;
+    max-width: 450px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Title Styling */
+  .form-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  /* Input Fields */
+  .input-field {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+  
+  .input-field:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+  }
+  
+  /* Dropdown */
+  .select-field {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  
+  /* Image Upload Preview */
+  .image-preview {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .image-preview img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    padding: 5px;
+  }
+  
+  /* PDF Section - Now aligned properly */
+  .pdf-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .pdf-container button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .pdf-container button:hover {
+    background: #218838;
+  }
+  
+  /* Submit Button */
+  .submit-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .submit-button:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+  }
+/* Positioning the chat logo on the right side */
+.chat-icon {
+    position: fixed; /* Fix the chat icon to the right side */
+    bottom: 20px; /* Adjust the distance from the bottom */
+    right: 20px; /* Adjust the distance from the right side */
+    background-color: #001a57; /* Circle background color */
+    border-radius: 50%; /* Makes the div circular */
+    padding: 15px; /* Space inside the circle */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds shadow for a floating effect */
+    z-index: 1000; /* Makes sure the icon stays on top of other content */
+  }
+  .chat {
+    position: fixed; /* Fix the chat icon to the right side */
+    bottom: 20px; /* Adjust the distance from the bottom */
+    right: 20px; /* Adjust the distance from the right side */
+    background-color: #001a57; /* Circle background color */
+    border-radius: 50%; /* Makes the div circular */
+    padding: 15px; /* Space inside the circle */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds shadow for a floating effect */
+    z-index: 1000; /* Makes sure the icon stays on top of other content */
+  }
+  
+  .chat-logo {
+    color: white; /* Icon color */
+    font-size: 24px; /* Size of the chat icon */
+  }
+  .support-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; /* Pushes button to the right */
+    padding-right: 70px; /* Adds spacing from the right */
+    margin-top: 20px;
+  }
+  
+  .customer-support-button {
+    background-color: #001a57;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+   
+    margin-left: 70px; /* Ensures button stays on the right */
+  }
+  
+  .customer-support-button:hover {
+    background-color: #0033a0;
+  }
+  

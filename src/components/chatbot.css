@@ -1,0 +1,111 @@
+/* General Layout */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f7f7f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .chat-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  
+   
+    height: 80vh;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Chat Box */
+  .chat-box {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #f1f1f1;
+  }
+  
+  .message {
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin: 5px 0;
+    max-width: 70%;
+    word-wrap: break-word;
+    line-height: 1.5;
+    font-size: 16px;
+  }
+  
+  .message.user {
+    background-color: #4b8bf5;
+    color: white;
+    margin-left: auto;
+    width:200px;
+  }
+  
+  .message.bot {
+    background-color: #e3e8f0;
+    color: #333;
+    margin-right: auto;
+  }
+  
+  /* Input Area */
+  .input-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #f1f1f1;
+  }
+  
+  .input-box input {
+    width: 80%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input-box input:focus {
+    border-color: #4b8bf5;
+  }
+  
+  .send-button {
+    background-color: #4b8bf5;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .send-button:hover {
+    background-color: #3579c7;
+  }
+  
+  /* Animation for messages */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
