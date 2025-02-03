@@ -25,11 +25,13 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import FormComponent from "./components/FormComponent";
 import Chat from "./components/Chat";
 import Chatbot from "./components/chatbot";
+import Login from "./components/login";
 const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<FormComponent />} />
+      <Route path="/" element={<Login />} />
+        <Route path="/form" element={<FormComponent />} />
         <Route path="/chat" element={<Chat />} />
         <Route path="/chatbot" element={<Chatbot />} />
       </Routes>

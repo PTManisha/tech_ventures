@@ -57,7 +57,7 @@
     padding: 12px;
     max-width: 70%;
     border-radius: 8px;
-    color: white;
+    color: black;
     font-size: 18px;
   }
   
@@ -71,7 +71,7 @@
   
   .timestamp {
     font-size: 0.65rem;
-    color: #e5e7eb;
+    color: black;
     text-align: right;
     margin-top: 4px;
   }
